@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './Pages/Login'
@@ -9,6 +8,7 @@ import Analytics from './Pages/Analytics'
 import Categories from './Pages/Categories'
 import Coupons from './Pages/Coupons'
 import Customers from './Pages/Customers'
+import SignUp from './Pages/SignUp'
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Routes>
 
           <Route path='/' element={<Login />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/products' element={<Products />} />
           <Route path='/Order' element={<Order />} />
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/categories' element={<Categories />} />
           <Route path='/coupons' element={<Coupons />} />
           <Route path='/customers' element={<Customers />} />
+          <Route path='/register' element={<SignUp/>}/>
 
         </Routes>
       </Router>
