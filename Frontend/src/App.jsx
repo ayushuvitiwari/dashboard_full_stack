@@ -11,6 +11,7 @@ import Customers from './Pages/Customers'
 import SignUp from './Pages/SignUp'
 
 const App = () => {
+
   return (
     <>
       <Router>
@@ -25,7 +26,7 @@ const App = () => {
           <Route path='/categories' element={<Categories />} />
           <Route path='/coupons' element={<Coupons />} />
           <Route path='/customers' element={<Customers />} />
-          <Route path='/register' element={<SignUp/>}/>
+          <Route path='/register' element={<SignUp />} />
 
         </Routes>
       </Router>
